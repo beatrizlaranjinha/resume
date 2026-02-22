@@ -1,11 +1,10 @@
 #import "resume.typ": *
 
-#let name = "Diogo Gomes de Araújo"
-#let phone = "(351) 914 576 371"
-#let email = "contact@diogoaraujo.com"
-#let github = "diogogomesaraujo"
-#let linkedin = "diogogomesaraujo"
-#let personal-site = "diogoaraujo.com"
+#let name = "Beatriz Morais Laranjinha"
+#let phone = "(351) 918 182 172"
+#let email = "beatrizlaranjinha6@gmail.com"
+#let github = "beatrizlaranjinha"
+#let linkedin = "beatrizlaranjinha"
 
 #show: resume.with(
   top-margin: 0.45in,
@@ -15,117 +14,72 @@
   author-name: name,
   phone: phone,
   email: email,
-  website: personal-site,
   linkedin-user-id: linkedin,
   github-username: github
 )
 
+#custom-title("Profile")[
+  Computer Science student with a strong interest in cybersecurity,
+  motivated to learn and develop skills in Linux environments and ethical hacking tools.
+]
+
 #custom-title("Education")[
-  #education-heading(
-    "Master's",
-    "Computer Science",
-    "Universidade do Porto (FCUP)",
-    datetime(year: 2025, month: 9, day: 11),
-    "Present",
-    degree-url: "https://sigarra.up.pt/fcup/pt/cur_geral.cur_view?pv_ano_lectivo=2021&pv_curso_id=876&pv_origem=CAND",
-    institution-url: "https://www.up.pt/fcup/en/"
-  )[]
   #education-heading(
     "Bachelor's",
     "Computer Science and Engineering",
     "Universidade da Beira Interior",
-    datetime(year: 2022, month: 9, day: 11),
-    datetime(year: 2025, month: 7, day: 11),
+    datetime(year: 2025, month: 9, day: 11),
+    "Present",
     degree-url: "https://www.ubi.pt/curso/42",
     institution-url: "https://www.ubi.pt/"
+  )[]
+
+  #education-heading(
+    "Bachelor's (Erasmus Exchange)",
+    "Computer Science",
+    "Cracow University of Technology",
+    datetime(year: 2022, month: 9, day: 11),
+    datetime(year: 2023, month: 2, day: 18),
+    degree-url: "https://iro.pk.edu.pl/exchange-program-non-erasmus/faculty-of-computer-science-and-telecommunications/",
+    institution-url: "https://www.pk.edu.pl/"
   )[]
 ]
 
 #custom-title("Work Experience")[
   #work-heading(
-    "STAR Junior Enterprise",
-    "Project Manager and Backend Developer",
-    "Remote",
-    datetime(year:2024, month:5, day:1),
-    datetime(year:2025, month:8, day:1)
-  )[
-    - *Developed* and *mantained backend API's* for mobile and web applications.
-    - Assisted in *recruiting* by *screening candidates* and *leading interviews*.
-    - *Coordinated teams* and *collaborated with clients* to ensure project requirements were met.
-  ]
-
-  #work-heading(
-    "DeGema",
-    "Waiter",
+    "Associação Estrela de 3 Pontas",
+    "Monitor",
     "On-site",
-    datetime(year:2023, month:6, day:1),
-    datetime(year:2023, month:9, day:1),
+    datetime(year: 2022, month: 9, day: 1),
+    datetime(year: 2025, month: 7, day: 1),
   )[
-    - *Served 20+ tables* during peak hours *without compromising order accuracy* and customer satisfaction.
-    - *Worked collectively* with the team to guarantee service consistency.
-  ]
-]
-
-
-#custom-title("Projects")[
-  #project-heading(
-    "Group Wallet for Nano",
-    project-url: "https://github.com/diogogomesaraujo/aokiji",
-    stack: "Rust, Tokio, Dioxus, Dalek"
-  )[
-    - Developed an *open-source library* with a custom implementation of FROST, *enabling shared account creation* and *group transactions* on Nano’s blockchain.
-    - Leveraged modern cryptographic protocols to *minimize communication rounds required for transaction signing* on Nano’s network.
-    - Created a *desktop application* that uses the custom library to allow groups to perform transactions remotely in an *intuitive and secure graphical environment*.
+    - Worked in a structured, schedule-driven environment, developing strong teamwork and time management skills.
+    - Supervised groups of children, strengthening communication, responsibility, and problem-solving under pressure.
   ]
 ]
 
 #custom-title("Certifications")[
   #certification-heading(
-    "2nd Place in IEEE RetroJam 2025",
-    datetime(year: 2025, month: 10, day: 1),
-    stack: ("IEEE UP Student Branch", "https://ieee.fe.up.pt/")
+    [
+      #link("https://www.coursera.org/account/accomplishments/professional-cert/certificate/XFQVEAS2YMMJ")[#"IBM Ethical Hacking with Open Source Tools"]
+    ],
+    datetime(year: 2025, month: 12, day: 1),
+    stack: ("Coursera", "https://www.coursera.org/")
   )[
-    - Built a game in 48 hours, *focusing on essential requirements* and *meeting tight deadlines* to finish the project on time.
-    - Linked with like-minded individuals, gaining insights into *different technologies and perspectives* used to reach a common goal.
+    - Hands-on experience with Kali Linux, Wireshark, Metasploit, and OpenVAS for network analysis, penetration testing, and vulnerability assessment.
+
   ]
 
   #certification-heading(
-    "Participation in Inforum 2025",
-    datetime(year: 2025, month: 9, day: 1),
-    stack: ("Inforum", "https://inforum2025.xdi.uevora.pt/")
-  )[
-    - Presented my Bachelor’s Degree final project to an *audience of researchers*, *professionals*, *and students*, receiving valuable feedback and constructive criticism.
-    - Networked with academic and industry professionals, gaining insights into *current research trends* and career opportunities in the field.
-  ]
-
-  #certification-heading(
-    "Industrial Robotics Fundamentals",
-    datetime(year: 2025, month: 7, day: 1),
+    "Introduction to Machine Learning and Data Science with Python",
+    datetime(year: 2024, month: 7, day: 1),
     stack: ("Universidade da Beira Interior", "https://www.ubi.pt/")
-  )[]
-
-  #certification-heading(
-    "Volunteering",
-    datetime(year: 2024, month: 2, day: 1),
-    stack: ("Missão País", "https://www.missaopais.pt/home")
-  )[]
-
-  #certification-heading(
-    "Participation in RoboCup 2016",
-    datetime(year: 2016, month: 6, day: 1),
-    stack: ("RoboCup Federation", "https://2016.robocup.org/web/index-2.html")
-  )[]
-
-  #certification-heading(
-    "1st Place in the National Robotics Championship",
-    datetime(year: 2016, month: 5, day: 1),
-    stack: ("Instituto Politécnico de Bragança", "https://robotica2016.ipb.pt/indexpt.html")
   )[]
 ]
 
 #custom-title("Technical Skills")[
   #skills()[
-    - *Programming Languages:* Rust, OCaml, C, Java, SQL, Python
-    - *Frameworks & Tools:* Git, Linux, Docker, Postman, Tokio, POSIX, gRPC, OpenMP/MPI, Dalek, Raylib
+    - *Programming Languages:* Rust, OCaml, C, Java, Python
+    - *Systems & Tools:* Linux, Git, Docker, Postman
   ]
 ]

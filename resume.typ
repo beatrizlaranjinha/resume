@@ -1,9 +1,9 @@
 #let resume(
   paper: "a4",
-  top-margin: 0.4in,
-  bottom-margin: 0.2in,
-  left-margin: 0.3in,
-  right-margin: 0.3in,
+  top-margin: 0.35in,
+  bottom-margin: 0.15in,
+  left-margin: 0.28in,
+  right-margin: 0.28in,
   font: "New Computer Modern",
   font-size: 10.8pt,
   personal-info-font-size: 10.5pt,
@@ -118,7 +118,7 @@
   )
 }
 
-#let custom-title(title, spacing-between: -0.5em, body) = {
+#let custom-title(title, spacing-between: -0.8em, body) = {
   [= #title]
   body
   v(spacing-between)
@@ -174,7 +174,8 @@
   v(-0.2em)
   if body != [] {
     v(-0.2em)
-    set par(leading: 0.6em)
+    set par(leading: 0.5em)
+
     set list(indent: 0.5em)
     body
   }
